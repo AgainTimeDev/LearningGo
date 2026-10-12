@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hilfe für LearningGo: Karteikarten, automatische Erkennung, Tagesziel, schwierige Karten, lokale Daten und Tastaturbedienung.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Hilfe · LearningGo · Entwurf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span>LearningGo</a>
+        <nav aria-label="Hauptnavigation">
+            <a href="index.html">Übersicht</a>
+            <a href="privacy.html">Datenschutz</a>
+            <a href="support.html" aria-current="page">Hilfe</a>
+        </nav>
+    </header>
+    <main id="inhalt">
+        <div class="draft" role="note">
+            <strong>Supportentwurf – direkter Kontakt fehlt noch</strong>
+            Die Hilfetexte sind vorbereitet. Vor Veröffentlichung muss hier eine echte, erreichbare Kontaktmöglichkeit des Betreibers ergänzt werden. Aktuell lässt sich über diese Seite keine Supportanfrage senden.
+        </div>
+        <section class="hero" aria-labelledby="titel">
+            <p class="eyebrow">Häufige Fragen</p>
+            <h1 id="titel">Gut weiterlernen.</h1>
+            <p class="lead">Antworten zu deinen Inhalten, zum Lernfortschritt und zur Bedienung von LearningGo auf iPhone und iPad.</p>
+        </section>
+        <div class="article">
+            <section class="article-section" aria-labelledby="inhalte-titel">
+                <h2 id="inhalte-titel">Dokumente &amp; Karteikarten</h2>
+                <details open>
+                    <summary>Wie werden Karten aus einem Dokument erstellt?</summary>
+                    <p>Schreibe eine Kartendefinition in eine eigene Zeile. LearningGo erkennt Karten automatisch beim Öffnen des Dokuments, beim Beenden der Bearbeitung oder vor dem Start einer Lernsitzung. Eine zusätzliche Bestätigung ist nicht nötig.</p>
+                    <p>Frage und Antwort:</p>
+                    <code class="example">Was ist RAM? == Random Access Memory</code>
+                    <p>Antwort eintippen:</p>
+                    <code class="example">Hauptstadt von Frankreich? =&gt; Paris</code>
+                    <p>Lückentext:</p>
+                    <code class="example">Berlin ist die {{Hauptstadt}} von Deutschland.</code>
+                    <p>Beide Richtungen, als zwei lernbare Karten:</p>
+                    <code class="example">house &lt;-&gt; Haus</code>
+                    <p>Identische Frage-Antwort-Paare werden innerhalb eines Dokuments nicht erneut angelegt. Bereits vorhandene Karten und ihr Lernfortschritt bleiben erhalten.</p>
+                </details>
+                <details>
+                    <summary>Muss ich meine Dokumenttexte speichern?</summary>
+                    <p>Dokumenttitel und -text werden während der Bearbeitung automatisch gespeichert. Aus unvollständigen Zwischenständen beim Tippen werden noch keine Karten erstellt. Beende die Texteingabe über „Fertig“ oder verlasse den Editor, damit die automatische Kartenerkennung ausgeführt wird.</p>
+                </details>
+                <details>
+                    <summary>Warum erscheint eine gelöschte oder geänderte Karte wieder?</summary>
+                    <p>Der Dokumenttext ist eine Quelle für die automatische Kartenerkennung. Steht dort weiterhin die alte Definition, kann daraus beim Öffnen erneut eine Karte entstehen. Entferne die entsprechende Textzeile, wenn du die Karte dauerhaft löschen möchtest.</p>
+                    <p>Änderungen im Karteneditor bearbeiten den ursprünglichen Dokumenttext nicht automatisch mit. Prüfe gegebenenfalls beide Stellen.</p>
+                </details>
+                <details>
+                    <summary>Was geschieht beim Löschen eines Ordners oder Dokuments?</summary>
+                    <p>Beim Löschen eines Ordners bleiben seine Dokumente erhalten. Beim Löschen eines Dokuments bleiben die zugehörigen Karteikarten ohne Dokumentzuordnung erhalten. Erst das Löschen einer Karte entfernt auch deren Einzelbewertungen. Bei bidirektionalen Karten werden beide verbundenen Lernrichtungen gemeinsam gelöscht.</p>
+                    <p>Bereits gespeicherte Lernsitzungen und die Tageshistorie für Ziel und Lernserie bleiben bestehen. Deshalb können Gesamtwerte nach dem Löschen einzelner Karten weiterhin früheres Lernen berücksichtigen.</p>
+                </details>
+            </section>
+            <section class="article-section" aria-labelledby="lernen-titel">
+                <h2 id="lernen-titel">Lernen &amp; Fortschritt</h2>
+                <details>
+                    <summary>Wie wird mein Tagesziel gezählt?</summary>
+                    <p>In den Einstellungen kannst du 10, 20, 30 oder 50 Karten oder ein eigenes positives Ziel wählen. Jede bewertete Karte zählt pro lokalem Kalendertag einmal zum Ziel – auch wenn du dieselbe Karte mehrfach wiederholst.</p>
+                    <p>Ein Tag ist erfolgreich, sobald das Ziel erreicht ist. Die Lernserie zählt aufeinanderfolgende erfolgreiche Kalendertage. Eine Serie vom Vortag bleibt während des laufenden Tages sichtbar, solange du heute noch Zeit hast, dein Ziel zu erreichen.</p>
+                    <p>Ein bereits erfolgreich abgeschlossener Tag behält sein erreichtes Ziel. Eine spätere Zieländerung gilt dann ab dem nächsten Tag. An einem noch nicht abgeschlossenen Tag wird die Änderung sofort berücksichtigt.</p>
+                </details>
+                <details>
+                    <summary>Wann ist eine Karte „schwierig“?</summary>
+                    <p>Eine Karte wird automatisch als schwierig erkannt, wenn mindestens vier Bewertungen vorliegen und mehr als 40&nbsp;% davon falsch sind oder wenn zuletzt mindestens dreimal hintereinander „Nochmal“ gewählt wurde.</p>
+                    <p>Eine einzelne falsche Antwort genügt deshalb normalerweise noch nicht. Im Lernen-Tab findest du die berechnete Anzahl und kannst eine eigene Sitzung mit diesen Karten starten.</p>
+                </details>
+                <details>
+                    <summary>Welche Bewertungen zählen als richtig oder falsch?</summary>
+                    <p>Wenn du eine Karte selbst bewertest, zählen „Gut“ und „Einfach“ als richtig, „Nochmal“ und „Schwer“ als falsch. Die Bewertung steuert die nächste Wiederholung.</p>
+                    <p>Beim Eintippen wird deine Antwort mit der Kartenantwort verglichen. Hier wird das Ergebnis dieses Vergleichs als richtig oder falsch gespeichert; die anschließende Bewertung steuert weiterhin die Wiederholungsplanung. Je nach Karteneinstellung wird Groß- und Kleinschreibung ignoriert. Der eingegebene Text bleibt nur vorübergehend im Lernmodus; gespeichert werden Bewertung, Ergebnis und Antwortdauer.</p>
+                </details>
+                <details>
+                    <summary>Was zeigen die Statistiken?</summary>
+                    <p>Der Statistik-Tab zeigt bearbeitete Karten, Lernzeit, Trefferquote, aktuelle Lernserie und die Gesamtzahl der Bewertungen. Die Diagramme lassen sich auf 7 Tage, 30 Tage oder 3 Monate umstellen. Die Werte werden aus Bewertungen und Lernsitzungen berechnet.</p>
+                    <p>Eine wiederholte Bewertung derselben Karte kann in der Statistik als weiterer Review zählen. Beim Tagesziel zählt diese Karte an einem Tag dagegen nur einmal.</p>
+                </details>
+            </section>
+            <section class="article-section" aria-labelledby="geraet-titel">
+                <h2 id="geraet-titel">Geräte &amp; Bedienung</h2>
+                <details>
+                    <summary>Werden meine Daten zwischen iPhone und iPad synchronisiert?</summary>
+                    <p>Derzeit speichert jedes Gerät seine Daten lokal. LearningGo bietet keinen eigenen Cloud-Abgleich, kein Benutzerkonto und keinen eigenen Export. Je nach Geräteeinstellungen kann das Betriebssystem App-Daten in einer iCloud- oder Computersicherung sichern.</p>
+                    <p>Eine solche Sicherung ist kein laufender Abgleich zwischen zwei Geräten. Weitere Informationen findest du im <a href="privacy.html#sicherung">Datenschutzentwurf zur Datensicherung</a>.</p>
+                </details>
+                <details>
+                    <summary>Welche Hardware-Tastenkürzel gibt es?</summary>
+                    <ul>
+                        <li><kbd>Leertaste</kbd> zeigt im Kartenlernmodus die Antwort, sofern gerade keine Antwort eingegeben wird.</li>
+                        <li><kbd>1</kbd> „Nochmal“, <kbd>2</kbd> „Schwer“, <kbd>3</kbd> „Gut“, <kbd>4</kbd> „Einfach“ – sobald die Bewertung verfügbar ist.</li>
+                        <li><kbd>⌘</kbd> + <kbd>N</kbd> erstellt ein neues Dokument in der Bibliothek beziehungsweise im passenden Ordner.</li>
+                        <li><kbd>⌘</kbd> + <kbd>F</kbd> öffnet oder fokussiert die Suche in der Bibliothek.</li>
+                    </ul>
+                    <p>Die verfügbaren Aktionen richten sich nach dem geöffneten Bildschirm und dem aktuellen Eingabefokus.</p>
+                </details>
+                <details>
+                    <summary>Die App reagiert nicht oder etwas wurde nicht gespeichert. Was hilft?</summary>
+                    <p>Notiere den geöffneten Bildschirm und die letzten Schritte. Prüfe, ob eine Fehlermeldung angezeigt wird und genügend Gerätespeicher frei ist. Bei einem Speicherfehler bietet die App gegebenenfalls „Erneut versuchen“ an.</p>
+                    <p>Entferne die App bei einem Datenproblem nicht vorschnell: Beim vollständigen Löschen gehen die lokalen App-Daten verloren. Prüfe zuerst, ob eine aktuelle Gerätesicherung vorhanden ist.</p>
+                    <p>Für eine spätere Supportanfrage sind Gerätemodell, iOS- oder iPadOS-Version sowie die App-Version und Buildnummer aus den Einstellungen hilfreich. Teile keine vertraulichen Dokumentinhalte, wenn sie zur Beschreibung nicht erforderlich sind.</p>
+                </details>
+            </section>
+            <section class="article-section" aria-labelledby="kontakt-titel">
+                <h2 id="kontakt-titel">Persönliche Hilfe</h2>
+                <p>Ein direkter Supportkontakt ist noch nicht eingerichtet. Vor Veröffentlichung ergänzt der Betreiber hier eine erreichbare Kontaktmöglichkeit sowie Hinweise zum Umgang mit Supportanfragen. Bis dahin bietet diese Seite ausschließlich die oben stehenden Hilfetexte.</p>
+                <a class="card-link" href="privacy.html">Informationen zum Datenschutz <span aria-hidden="true">&nbsp;→</span></a>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">LearningGo · Lokaler Supportentwurf · Stand: 12. Oktober 2026</footer>
+</body>
+</html>

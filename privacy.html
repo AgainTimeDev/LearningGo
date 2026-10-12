@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Technischer Datenschutzentwurf für LearningGo: lokale Lerninhalte, Bewertungen, Lernverlauf und Datenlöschung.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Datenschutz · LearningGo · Entwurf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">L</span>LearningGo</a>
+        <nav aria-label="Hauptnavigation">
+            <a href="index.html">Übersicht</a>
+            <a href="privacy.html" aria-current="page">Datenschutz</a>
+            <a href="support.html">Hilfe</a>
+        </nav>
+    </header>
+    <main id="inhalt">
+        <div class="draft" role="note">
+            <strong>Datenschutzentwurf – Angaben fehlen noch</strong>
+            Dieser Text beschreibt den derzeitigen technischen Stand. Er ist noch keine abschließend geprüfte Datenschutzerklärung. Vor Veröffentlichung müssen insbesondere Betreiber, Kontakt, Land, anwendbare Rechtsgrundlagen sowie die Aufbewahrung von Supportanfragen ergänzt werden. Die offenen Punkte stehen am Ende dieser Seite.
+        </div>
+        <section class="hero" aria-labelledby="titel">
+            <p class="eyebrow">Transparenz</p>
+            <h1 id="titel">Datenschutz</h1>
+            <p class="lead">LearningGo speichert deine Lerninhalte und deinen Lernverlauf auf deinem Gerät. Für die Lernfunktionen brauchst du kein Benutzerkonto und keine Internetverbindung.</p>
+            <p class="meta">Technischer Stand: 12. Oktober 2026</p>
+        </section>
+        <nav class="toc" aria-label="Auf dieser Seite">
+            <a href="#lokale-daten">Lokale Daten</a>
+            <a href="#sicherung">Sicherung</a>
+            <a href="#loeschen">Löschen</a>
+            <a href="#webseite">Diese Webseite</a>
+            <a href="#offene-angaben">Offene Angaben</a>
+        </nav>
+        <div class="article">
+            <section class="article-section" id="lokale-daten" aria-labelledby="daten-titel">
+                <h2 id="daten-titel">Welche Daten die App lokal speichert</h2>
+                <ul>
+                    <li><strong>Lerninhalte:</strong> Ordnernamen, Dokumenttitel und -texte, Karteikarten mit Fragen und Antworten, Kartentypen, Zuordnungen und Tags.</li>
+                    <li><strong>Verwaltungsdaten:</strong> lokale Kennungen sowie Erstellungs- und Änderungszeitpunkte.</li>
+                    <li><strong>Bewertungen und Wiederholungen:</strong> gewählte Bewertung („Nochmal“, „Schwer“, „Gut“, „Einfach“), Ergebnis richtig oder falsch, Bewertungszeitpunkt, Antwortdauer, bisheriges und neues Wiederholungsintervall sowie nächste Wiederholungstermine. Zähler und Planungswerte halten den Lernstand einer Karte fest.</li>
+                    <li><strong>Lernsitzungen:</strong> Beginn und gegebenenfalls Ende, Anzahl bearbeiteter Karten sowie richtige und falsche Antworten.</li>
+                    <li><strong>Tagesziel und Lernserie:</strong> ausgewähltes Ziel, Fortschritt pro lokalem Kalendertag, erfolgreiche Tage und lokale Kennungen bereits gezählter Karten und Bewertungen.</li>
+                </ul>
+                <p>Diese Daten ermöglichen das Organisieren und Suchen von Inhalten, automatische Kartenerkennung, Wiederholungsplanung, schwierige Karten, Statistiken, Tagesziele und die Lernserie.</p>
+                <p>Eine im Lernmodus eingetippte Antwort wird nur vorübergehend im Arbeitsspeicher für die Auswertung verwendet. Der eingegebene Antworttext wird nicht als Teil des gespeicherten Reviews abgelegt. Die gewählte Bewertung und das Ergebnis der Antwortprüfung werden gespeichert.</p>
+            </section>
+            <section class="article-section" aria-labelledby="verbindung-titel">
+                <h2 id="verbindung-titel">Keine eigenen Server oder Trackingdienste</h2>
+                <p>Die aktuelle App enthält keine Benutzerkonten, Werbung, Analyse-SDKs oder Trackingdienste. Sie überträgt Lerninhalte nicht automatisch an den Betreiber oder an einen eigenen Server. Die lokale Datenbank verwendet keine CloudKit-Synchronisierung.</p>
+                <p>Wenn du in der App einen Datenschutz- oder Supportlink auswählst, wird die entsprechende Webseite geöffnet. Dabei fallen beim Webseitenanbieter technisch erforderliche Verbindungsdaten an. Die App hängt deine Dokumente, Karten oder deinen Lernverlauf nicht automatisch an diese Links an.</p>
+            </section>
+            <section class="article-section" id="sicherung" aria-labelledby="sicherung-titel">
+                <h2 id="sicherung-titel">Gerätesicherungen und Gerätewechsel</h2>
+                <p>Je nach deinen Einstellungen können lokale App-Daten Bestandteil einer iCloud- oder Computersicherung des Betriebssystems sein. Ob und wie solche Sicherungen erstellt und aufbewahrt werden, richtet sich nach deinen Geräteeinstellungen und dem jeweiligen Sicherungsdienst.</p>
+                <p>LearningGo bietet derzeit keinen eigenen Export und keinen geräteübergreifenden Cloud-Abgleich an. Eine Gerätesicherung ist von einer laufenden Synchronisierung zwischen iPhone und iPad zu unterscheiden.</p>
+            </section>
+            <section class="article-section" id="loeschen" aria-labelledby="loeschen-titel">
+                <h2 id="loeschen-titel">Löschen und Aufbewahren auf dem Gerät</h2>
+                <p>Deine Inhalte bleiben lokal gespeichert, bis du sie über die verfügbaren Löschfunktionen entfernst oder die lokalen App-Daten gelöscht werden. Es gibt derzeit keine automatische zeitliche Bereinigung des Lernverlaufs und keinen eigenen Knopf zum vollständigen Zurücksetzen aller Daten.</p>
+                <ul>
+                    <li><strong>Ordner löschen:</strong> Die enthaltenen Dokumente bleiben erhalten und verlieren ihre Ordnerzuordnung.</li>
+                    <li><strong>Dokument löschen:</strong> Die zugehörigen Karteikarten bleiben ohne Dokumentzuordnung erhalten.</li>
+                    <li><strong>Karte löschen:</strong> Die zugehörigen Einzelbewertungen werden entfernt. Bei einer bidirektionalen Karte werden beide verbundenen Lernrichtungen samt ihren Bewertungen gelöscht. Tags und unabhängige Karten bleiben erhalten.</li>
+                    <li><strong>Lernsitzungen, Tagesziel und Lernserie:</strong> Bereits gespeicherte Sitzungszähler und die separat gespeicherte Tageshistorie bleiben auch nach dem Löschen einer Karte bestehen.</li>
+                </ul>
+                <p>Steht eine gelöschte Kartendefinition weiterhin im Dokumenttext, kann sie beim nächsten Öffnen des Dokuments automatisch erneut als Karte angelegt werden. Für eine dauerhafte Entfernung musst du auch die betreffende Textzeile entfernen.</p>
+                <p>Prüfungsdaten aus älteren App-Versionen bleiben aus Kompatibilitätsgründen im lokalen Speicher erhalten. Die aktuelle App hat keinen Prüfungen-Tab und keine eigene Verwaltung dieser alten Daten.</p>
+                <p>Das vollständige Löschen der App in iOS oder iPadOS entfernt ihre lokalen App-Daten. Das Auslagern einer App kann dagegen Daten erhalten. Vorhandene Gerätesicherungen werden durch das Löschen der App nicht automatisch entfernt.</p>
+            </section>
+            <section class="article-section" id="webseite" aria-labelledby="webseite-titel">
+                <h2 id="webseite-titel">Diese Webseite und GitHub Pages</h2>
+                <p>Diese Seiten liegen derzeit nur als lokaler Entwurf vor. Für eine spätere Veröffentlichung ist GitHub Pages vorgesehen.</p>
+                <p>Beim Aufruf einer dort veröffentlichten Seite verarbeitet der Hostinganbieter technische Verbindungsdaten, beispielsweise die IP-Adresse und Angaben des Browsers, die für die Bereitstellung des Aufrufs anfallen. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">allgemeine Datenschutzerklärung von GitHub</a>.</p>
+                <p>Die Seiten selbst laden keine externen Schriftarten, Skripte, Analysewerkzeuge oder eingebetteten Inhalte. Sie enthalten keine eigenen Trackingfunktionen oder eigenen Cookies.</p>
+            </section>
+            <section class="article-section" id="offene-angaben" aria-labelledby="offen-titel">
+                <h2 id="offen-titel">Vor Veröffentlichung konkret zu ergänzen</h2>
+                <p>Für die endgültige Fassung fehlen noch folgende Angaben des tatsächlichen Betreibers:</p>
+                <ol>
+                    <li><strong>Verantwortlicher:</strong> vollständiger Name beziehungsweise Unternehmensname, erforderliche Anschrift und Land.</li>
+                    <li><strong>Kontakt:</strong> eine tatsächlich erreichbare Kontaktmöglichkeit für Datenschutzfragen und Support.</li>
+                    <li><strong>Rechtlicher Rahmen:</strong> anwendbares Datenschutzrecht, passende Rechtsgrundlagen der tatsächlichen Verarbeitung sowie gegebenenfalls zuständige Stellen und Hinweise zu Betroffenenrechten.</li>
+                    <li><strong>Support:</strong> verwendeter Kontaktkanal, dort verarbeitete Angaben, Empfänger oder Dienstleister, Zweck und konkrete Aufbewahrungs- beziehungsweise Löschfristen für Anfragen.</li>
+                    <li><strong>Hosting:</strong> endgültiger Anbieter und veröffentlichte Seitenadresse; die Angaben sind mit der tatsächlichen Konfiguration und der aktuellen Anbieterinformation abzugleichen.</li>
+                </ol>
+                <p>Bis diese Punkte ergänzt und geprüft sind, ist diese Fassung ein technischer Entwurf. Es werden keine Kontaktdaten oder rechtlichen Zusicherungen vorausgesetzt.</p>
+                <a class="card-link" href="support.html">Zur Hilfe <span aria-hidden="true">&nbsp;→</span></a>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">LearningGo · Unveröffentlichter Datenschutzentwurf · Betreiberangaben noch offen</footer>
+</body>
+</html>

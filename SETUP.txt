@@ -1,0 +1,97 @@
+LearningGo – lokale GitHub-Pages-Entwürfe
+Stand: 12. Oktober 2026
+
+STATUS
+Diese Dateien wurden nur lokal vorbereitet. Es wurde nichts hochgeladen,
+veröffentlicht oder mit einem GitHub-Repository verbunden. Die App-Konfiguration
+Config/ReleaseLinks.xcconfig bleibt absichtlich ohne URLs.
+
+VOR DER VERÖFFENTLICHUNG
+1. Betreibername, erforderliche Anschrift und Land ergänzen.
+2. Einen echten, erreichbaren Datenschutz- und Supportkontakt einrichten und auf
+   privacy.html sowie support.html nennen. Keine Beispieladresse veröffentlichen.
+3. In privacy.html den tatsächlich geltenden rechtlichen Rahmen, Rechtsgrundlagen,
+   gegebenenfalls Betroffenenrechte und zuständige Stellen prüfen und ergänzen.
+4. Den tatsächlichen Supportablauf samt verarbeiteten Angaben, eingesetzten
+   Diensten/Empfängern und Aufbewahrungs- bzw. Löschfristen beschreiben.
+5. Den endgültigen Hoster bestätigen. Dieser Entwurf beschreibt GitHub Pages;
+   bei anderem Hosting muss der Abschnitt entsprechend angepasst werden.
+6. Alle Aussagen gegen den finalen App-Build prüfen. Der aktuelle Entwurf enthält
+   bewusst keine Cloud-Synchronisierung, keinen Export und keine Prüfungsverwaltung.
+7. Erst danach Entwurfsvermerke, offene Punkte und „Entwurf“ in Seitentiteln/
+   Beschreibungen überarbeiten. Das Datum auf den tatsächlichen Stand setzen.
+   Die robots-noindex-Metatags können für einen bewusst öffentlich auffindbaren
+   Auftritt entfernt werden; noindex ist kein Zugriffsschutz.
+
+DATEIEN
+- index.html: kurze Übersicht
+- privacy.html: technischer Datenschutzentwurf mit sichtbaren offenen Angaben
+- support.html: häufige Fragen und noch zu ergänzender Kontakt
+- styles.css: lokale Gestaltung mit Systemschriften, Light/Dark Mode
+- .nojekyll: leere Datei, schaltet Jekyll-Verarbeitung für diese statischen Seiten aus
+- SETUP.txt: diese lokale Anleitung; muss nicht veröffentlicht werden
+
+Die Seiten benötigen keine Pakete, Skripte, externen Schriftarten oder CDNs.
+Alle internen Links sind relativ. Die einzige externe Inhaltsverknüpfung ist die
+GitHub-Datenschutzerklärung im Hosting-Abschnitt. Es gibt keine eigenen Cookies,
+keine eingebetteten Inhalte und kein Analysewerkzeug.
+
+MANUELL AUF GITHUB PAGES VERÖFFENTLICHEN
+Die folgenden Schritte sind eine Anleitung für den Betreiber, kein bereits
+ausgeführter Auftrag. Vorher die offenen Angaben vollständig ergänzen.
+
+1. Bei GitHub ein für diese Webseite bestimmtes Repository erstellen oder ein
+   passendes vorhandenes wählen. Die Veröffentlichung dieser Hilfeseiten erfordert
+   nicht, den Quellcode der iOS-App öffentlich hochzuladen. Prüfen, ob GitHub Pages
+   für Sichtbarkeit und Tarif des gewählten Repositorys verfügbar ist.
+2. index.html, privacy.html, support.html, styles.css und die leere .nojekyll-Datei
+   direkt im obersten Ordner des gewählten Veröffentlichungsbranches ablegen,
+   beispielsweise main. Nicht den ganzen App-Ordner hochladen. Wer den Ordner docs
+   als Quelle nutzen möchte, legt dieselben Dateien stattdessen direkt in docs ab.
+   .nojekyll ist eine versteckte Datei und muss beim Hochladen mitgenommen werden.
+3. Im Repository „Settings“ öffnen, dann im Bereich „Code, planning, and automation“ auf
+   „Pages“ gehen.
+4. Unter „Build and deployment“ als „Source“ die Option „Deploy from a branch“
+   wählen. Den tatsächlich verwendeten Branch und „/(root)“ wählen, wenn die Dateien
+   im obersten Ordner liegen; andernfalls „/docs“. Mit „Save“ bestätigen.
+5. Die Bereitstellung abwarten. Die von GitHub unter „Pages“ angezeigte echte
+   Seitenadresse verwenden. Keine Adresse aus einem Beispiel ableiten.
+6. Die veröffentlichte Startseite öffnen. Von dort „Datenschutz“ und „Hilfe“
+   auswählen. Zusätzlich privacy.html und support.html über ihre direkten Adressen
+   aufrufen. Verfügbarkeit ohne GitHub-Anmeldung und über HTTPS prüfen.
+7. Auf iPhone, iPad und Desktop prüfen: lesbare Texte, funktionierende relative
+   Links, Tastaturfokus, aufklappbare FAQ, Light und Dark Mode. Sicherstellen, dass
+   keine Entwurfsvermerke oder ungefüllten Pflichtangaben mehr vorhanden sind.
+
+APP-LINKS ERST NACH ERFOLGREICHER VERÖFFENTLICHUNG EINTRAGEN
+Datei: Config/ReleaseLinks.xcconfig im App-Projekt.
+Aktuell sind beide Werte leer und sollen bis zur geprüften Veröffentlichung leer
+bleiben:
+
+LEARNINGGO_PRIVACY_POLICY_URL =
+LEARNINGGO_SUPPORT_URL =
+
+1. Die tatsächlich veröffentlichte HTTPS-Adresse von privacy.html kopieren.
+2. In der .xcconfig-Datei ausschließlich den Beginn https:// in https:/$()/ ändern.
+   Der Rest der echten Adresse bleibt gleich. Den so geschriebenen Wert hinter
+   LEARNINGGO_PRIVACY_POLICY_URL = einsetzen.
+3. Für die echte Adresse von support.html denselben Schritt durchführen und sie
+   hinter LEARNINGGO_SUPPORT_URL = einsetzen.
+4. Kein ungeändertes https:// in den xcconfig-Wert schreiben: // startet dort einen
+   Kommentar. $() expandiert leer und erhält dadurch den gültigen URL-Trenner.
+   Keine Beispiel-Hosts, Platzhalter, Anmeldedaten oder lokale Dateipfade verwenden.
+5. App neu bauen. In den gebauten Bundle-Informationen prüfen, dass
+   LearningGoPrivacyPolicyURL und LearningGoSupportURL jeweils eine vollständige,
+   normale HTTPS-Adresse enthalten, ohne den xcconfig-Ausdruck $().
+6. Auf iPhone und iPad in „Einstellungen“ die Links „Datenschutzrichtlinie“ und
+   „Support“ öffnen und die tatsächlichen Seiten kontrollieren.
+7. Für App Store Connect die normalen veröffentlichten HTTPS-Adressen verwenden,
+   ohne die spezielle .xcconfig-Schreibweise. Beide Seiten müssen öffentlich
+   erreichbar sein. Die Supportseite braucht einen tatsächlich nutzbaren Kontakt.
+
+DATEN UND SUPPORT
+Die Veröffentlichung der Hilfeseiten überträgt keine App-Lerninhalte. GitHub erhält
+beim späteren Seitenaufruf die dafür anfallenden technischen Verbindungsdaten.
+Wenn zukünftig Kontaktformulare, E-Mail-Dienste, Analysewerkzeuge oder andere
+Einbindungen hinzukommen, müssen Datenschutztext und technische Prüfung an den
+tatsächlichen neuen Ablauf angepasst werden.
